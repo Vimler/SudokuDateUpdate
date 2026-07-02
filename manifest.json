@@ -1,0 +1,24 @@
+{
+    "name": "SudokuDateUpdate",
+    "description": "Update date of sudoku webpage",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/script.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting"
+    ]
+}
